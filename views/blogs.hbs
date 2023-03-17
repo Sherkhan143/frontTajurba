@@ -1,0 +1,295 @@
+<!-- Start Header Area -->
+{{>header}}
+<!-- End Header Area -->
+<!-- Start Nav Area -->
+{{>nav}}
+<!-- End Nav Area -->
+
+<!-- ============start page============= -->
+
+<style>
+    .navbar-area {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .our-blog-page .single-news {
+        margin-bottom: 30px;
+    }
+
+    .our-blog-page .section-title h2 {
+        font-size: 40px;
+    }
+</style>
+
+
+<div class="latest-news-area section our-blog-page" id="our-blog-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2 class="mb-0 ">our <span class="lava-color">blogs</span> </h2>
+                    {{!-- <p class="sub-heading">get insights of what’s happening in the business world</p> --}}
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-wrapper position-relative">
+            <div class="row blog-slider">
+                {{#data}}
+                {{!-- <h2>{{title}}</h2>
+                <img src=" " alt=""> --}}
+
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img class="thumb" src="../public/uploaded_images/images/{{featured_image}}" alt="#">
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>{{title}}</a></h4>
+                            <p class="my-3">{{blog_detail}}</p>
+                            <div class="meta-details">
+                                <a href="/blog/{{id}}">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">{{created_at}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                {{/data}}
+
+                {{!-- <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img class="thumb" src="../dashboard/public/images/uploaded_images/portfolio-strip.jpeg"
+                                alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>Make your team a Design driven
+                                    company</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div> --}}
+                {{!-- <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-1.webp" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>Make your team a Design driven
+                                    company</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-2.jpeg" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>The newest web framework that changed
+                                    the world</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-3.png" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>5 ways to improve user retention for
+                                    your startup</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase ">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-4.jpeg" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>5 ways to improve user retention for
+                                    your startup</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-1.webp" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>Make your team a Design driven
+                                    company</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-2.jpeg" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>The newest web framework that changed
+                                    the world</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-3.png" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>5 ways to improve user retention for
+                                    your startup</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase ">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image">
+                            <img class="thumb" src="static/images/blog/blog-4.jpeg" alt="#">
+
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a>5 ways to improve user retention for
+                                    your startup</a></h4>
+                            <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum
+                                has been the industry's standard.</p>
+                            <div class="meta-details">
+                                <a href="blog.php">
+                                    <span class="text-uppercase lava-color">read more</span>
+                                </a>
+                                <span class="text-uppercase">June 22, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div> --}}
+            </div>
+
+            {{!-- <div id="blog_controlsContainer">
+                <a id="prev"><i class="fa-solid fa-chevron-left"></i></a>
+                <a id="next"><i class="fa-solid fa-chevron-right"></i></a>
+            </div> --}}
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- ============end page============= -->
+
+<!-- Start Footer Area -->
+{{>footer}}
+<!-- End Footer Area -->
+<!-- Start Script Area -->
+{{>scripts}}
+<!-- End Script Area -->
+
+</body>
+
+</html>
